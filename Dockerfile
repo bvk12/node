@@ -2,7 +2,7 @@
 FROM node:14
 
 
-ENV PORT 8080
+ENV PORT 3000
 ENV HOST 0.0.0.0
 
 # Set the working directory in the container
@@ -21,7 +21,7 @@ COPY . .
 RUN npm run 
 
 # Expose the port on which the app will run
-EXPOSE 8080
+EXPOSE 3000
 
 # Define the command to run your application
 CMD ["npm", "start"]
