@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['buildx', 'build', '--platform linux/amd64' , '-t', 
+    args: ['build', '-t', 
              'us-central1-docker.pkg.dev/${PROJECT_ID}/cloudrun-art1/cloudrun-art1:${SHORT_SHA}', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
