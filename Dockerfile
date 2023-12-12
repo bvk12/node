@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a base image
-FROM node:14
+FROM node:14-apline
 
 
 ENV PORT 3000
@@ -18,7 +18,7 @@ RUN npm install
 COPY . .
 
 # Build the Next.js application
-RUN npm run 
+RUN npm run build
 
 # Expose the port on which the app will run
 EXPOSE 3000
