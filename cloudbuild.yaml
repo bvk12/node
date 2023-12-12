@@ -7,4 +7,4 @@ steps:
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'cloudrun-demo', '--image', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloudrun-art1/cloudrun-art1:${SHORT_SHA}', '--region', 'us-central1', '--port', '8080',--platform', 'managed', '--allow-unauthenticated']
+    args: ['run', 'deploy', 'cloudrun-demo', '--image', 'us-central1-docker.pkg.dev/${PROJECT_ID}/cloudrun-art1/cloudrun-art1:${SHORT_SHA}', '--region', 'us-central1', '--port', '8080', '--platform', 'managed', '--allow-unauthenticated']
