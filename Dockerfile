@@ -1,9 +1,9 @@
 # Use an official Node.js runtime as a base image
 FROM node:14
 
-EXPOSE 8080
-ENV PORT 8080
-ENV HOST 0.0.0.0
+#EXPOSE 8080
+#ENV PORT 8080
+#ENV HOST 0.0.0.0
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
